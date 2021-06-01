@@ -3,6 +3,9 @@ input.onGesture(Gesture.TiltRight, function () {
     	
     }
 })
+// 　AとBのボタンでそれぞれのアニメーションを作成。
+// 　ずっと押している限り同じアニメーションが繰り返される。
+// 　傾きによってもそれぞれ別のアニメーションを作成。左右どちらかに傾け続けている限り繰り返される。
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         for (let a = 0; a <= 2; a++) {
